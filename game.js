@@ -66,7 +66,7 @@ getNewQuestion = () => {
     //go to the end page
     return window.location.assign('/end.html');
   }
-  questionCounter++;
+  questionCounter += 1;
 
   progressText.textContent = `Question: ${questionCounter}/${MAX_QUESTIONS}`;
 
