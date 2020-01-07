@@ -49,7 +49,7 @@ fetch('https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple')
 
 //Constants
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 10;
 
 startGame = () => {
   questionCounter = 0;
@@ -75,11 +75,11 @@ getNewQuestion = () => {
 
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
-  question.textContent = currentQuestion.question;
+  question.innerHTML = currentQuestion.question;
 
   choices.forEach(choice => {
     const number = choice.dataset['number'];
-    choice.textContent = currentQuestion[`choice${number}`];
+    choice.innerHTML = currentQuestion[`choice${number}`];
   });
 
   availableQuestions.splice(questionIndex, 1);
