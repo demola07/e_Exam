@@ -1,0 +1,22 @@
+{
+  "name": "e_examapp",
+  "version": "1.0.0",
+  "description": "An application for computer based testing",
+  "main": "index.js",
+  "homepage": "https://demola07.github.io/e_Exam",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demola07/quizApp.git"
+  },
+  "author": "ademola sobaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demola07/quizApp/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
